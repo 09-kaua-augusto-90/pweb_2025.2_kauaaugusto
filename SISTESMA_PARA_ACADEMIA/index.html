@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stark Gym - Painel Administrativo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="material-icons">fitness_center</span>
+                <h2>STARK GYM</h2>
+            </div>
+            
+            <nav>
+                <a href="#" class="active"><span class="material-icons">dashboard</span> Visão Geral</a>
+                <a href="#"><span class="material-icons">people</span> Alunos</a>
+                <a href="#"><span class="material-icons">payment</span> Financeiro</a>
+            </nav>
+
+            <div class="logout">
+                <a href="#">Sair do Sistema</a>
+            </div>
+        </aside>
+
+        <main class="content">
+            <header>
+                <h1>Dashboard</h1>
+                <div class="user-info">
+                    <span>Olá, Admin</span>
+                    <div class="avatar">A</div>
+                </div>
+            </header>
+
+            <section class="cards-grid">
+                <div class="card blue">
+                    <h3>Total de Alunos</h3>
+                    <p class="number" id="dash-total">0</p>
+                    <span class="detail">Cadastrados no sistema</span>
+                </div>
+                <div class="card green">
+                    <h3>Faturamento Estimado</h3>
+                    <p class="number" id="dash-faturamento">R$ 0,00</p>
+                    <span class="detail">Baseado nos planos ativos</span>
+                </div>
+                <div class="card red">
+                    <h3>Planos Vencidos</h3>
+                    <p class="number" id="dash-vencidos">0</p>
+                    <span class="detail">Alunos sem acesso</span>
+                </div>
+            </section>
+
+            <section class="recent-list">
+                <div class="list-header">
+                    <h2>Matrículas Recentes</h2>
+                    <button class="btn-add" onclick="novoAluno()">+ Novo Aluno</button>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Aluno</th>
+                            <th>Plano</th>
+                            <th>Data Matrícula</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-corpo">
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
