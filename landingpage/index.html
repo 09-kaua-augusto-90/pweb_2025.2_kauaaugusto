@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Solutions | Inovação Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="container">
+            <h1 class="logo">NEXUS<span>.</span></h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Nossa História</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button id="theme-toggle" title="Alternar Modo Noturno">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="reveal">Transforme sua ideia em <span class="gradient-text">Realidade Digital</span></h2>
+                <p class="reveal delay-1">Criamos soluções personalizadas para escalar o seu negócio com tecnologia de ponta.</p>
+                <div class="hero-btns reveal delay-2">
+                    <a href="#contato" class="btn btn-primary">Começar Agora</a>
+                    <a href="#servicos" class="btn btn-secondary">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre" class="about reveal">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="section-title" style="text-align: left;">
+                        <h2>Nossa História</h2>
+                        <div class="underline" style="margin: 10px 0;"></div>
+                    </div>
+                    <p>Fundada em 2020, a <strong>Nexus Solutions</strong> nasceu para simplificar a complexidade digital para empresas em crescimento.</p>
+                    <p>Acreditamos que a tecnologia deve ser uma ponte para criar experiências memoráveis e resultados reais.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span>+150</span>
+                            <p>Projetos</p>
+                        </div>
+                        <div class="stat-item">
+                            <span>5 Anos</span>
+                            <p>Experiência</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800" alt="Equipe Nexus">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossos Serviços</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="services-grid">
+                <div class="card">
+                    <i class="fas fa-code"></i>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Sistemas robustos e sites performáticos utilizando tecnologias de ponta.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Interfaces intuitivas focadas na experiência do usuário e conversão.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Estratégia Digital</h3>
+                    <p>Análise de dados e SEO para colocar sua marca no topo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Fale Conosco</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>E-mail</h4>
+                        <p>contato@nexus.com.br</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h4>WhatsApp</h4>
+                        <p>(84) 99999-9999</p>
+                    </div>
+                </div>
+
+                <div class="contact-box">
+                    <form id="contact-form">
+                        <div class="input-group">
+                            <input type="text" id="name" name="name" required placeholder="Seu Nome">
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" name="email" required placeholder="Seu E-mail">
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" name="message" rows="5" required placeholder="Como podemos ajudar?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Nexus Solutions. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
