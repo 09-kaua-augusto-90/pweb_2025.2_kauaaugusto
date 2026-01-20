@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>DevStore - Mini E-commerce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">DevStore</div>
+    <div class="search">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Buscar produtos..."
+        aria-label="Buscar produtos"
+      />
+    </div>
+    <button class="cart-button" id="cart-button" aria-label="Abrir carrinho">
+      🛒 <span id="cart-count">0</span>
+    </button>
+  </header>
+
+  <main class="container">
+    <aside class="filters">
+      <h3>Categorias</h3>
+      <ul id="category-list">
+        <!-- preenchido via JS -->
+      </ul>
+    </aside>
+
+    <section class="products">
+      <h2>Produtos</h2>
+      <div id="products-grid" class="products-grid">
+        <!-- cards via JS -->
+      </div>
+    </section>
+  </main>
+
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-panel" id="cart-panel" aria-label="Carrinho">
+    <header class="cart-header">
+      <h3>Carrinho</h3>
+      <button id="close-cart" class="btn-icon" aria-label="Fechar carrinho">
+        ✕
+      </button>
+    </header>
+
+    <div id="cart-items" class="cart-items">
+      <!-- itens via JS -->
+    </div>
+
+    <footer class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <strong id="cart-total">R$ 0,00</strong>
+      </div>
+      <button class="btn-primary" id="checkout-btn">Finalizar (fake)</button>
+    </footer>
+  </aside>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
