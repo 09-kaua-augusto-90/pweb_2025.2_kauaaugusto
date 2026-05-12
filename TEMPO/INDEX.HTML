@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast | Atmosfera em Tempo Real</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="CSS/STYLE.CSS">
+</head>
+<body>
+
+    <div class="bg-overlay"></div>
+
+    <main class="app-container">
+        <header class="search-section">
+            <div class="input-wrapper">
+                <i data-lucide="map-pin" class="icon-location"></i>
+                <input type="text" id="city-input" placeholder="Pesquisar cidade..." autocomplete="off">
+                <button id="search-btn" aria-label="Buscar">
+                    <i data-lucide="search"></i>
+                </button>
+            </div>
+        </header>
+
+        <div id="loader" class="loader hidden"></div>
+
+        <section id="weather-display" class="weather-card hidden">
+            <div class="main-info">
+                <div class="location">
+                    <h1 id="city-name">--</h1>
+                    <p id="date-now">--</p>
+                </div>
+                
+                <div class="weather-primary">
+                    <div class="icon-box">
+                        <i id="weather-icon" data-lucide="cloud" size="80"></i>
+                    </div>
+                    <div class="temp-container">
+                        <span id="temp-value">--</span><span class="unit">°</span>
+                    </div>
+                </div>
+
+                <div class="condition-badge">
+                    <span id="weather-desc">--</span>
+                </div>
+            </div>
+
+            <div class="details-grid">
+                <div class="detail-item">
+                    <div class="detail-icon"><i data-lucide="droplets"></i></div>
+                    <div class="detail-info">
+                        <p>Umidade</p>
+                        <span id="humidity">--</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon"><i data-lucide="wind"></i></div>
+                    <div class="detail-info">
+                        <p>Vento</p>
+                        <span id="wind">--</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon"><i data-lucide="thermometer"></i></div>
+                    <div class="detail-info">
+                        <p>Sensação</p>
+                        <span id="feels-like">--</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon"><i data-lucide="eye"></i></div>
+                    <div class="detail-info">
+                        <p>Visibilidade</p>
+                        <span id="visibility">--</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="welcome-msg" class="welcome-container">
+            <div class="welcome-icon">
+                <i data-lucide="cloud-sun-rain" size="48"></i>
+            </div>
+            <h2>SkyCast</h2>
+            <p>Descubra o clima em qualquer lugar do mundo com precisão técnica.</p>
+        </div>
+    </main>
+
+    <script src="JS/SCRIPT.JS"></script>
+</body>
+</html>

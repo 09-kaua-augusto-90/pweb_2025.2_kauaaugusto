@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STAR WARS GALAXY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+
+  <!-- Stars Background -->
+  <div class="stars" id="stars"></div>
+  <div class="stars2" id="stars2"></div>
+  <div class="stars3" id="stars3"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-star">✦</span>
+        <span class="logo-text">STAR WARS</span>
+        <span class="logo-star">✦</span>
+      </div>
+      <p class="logo-sub">GALAXY EXPLORER · SWAPI DATABASE</p>
+    </div>
+  </header>
+
+  <!-- Navigation Tabs -->
+  <nav class="tab-nav">
+    <button class="tab-btn active" data-tab="characters">
+      <span class="tab-icon">◈</span> Personagens
+    </button>
+    <button class="tab-btn" data-tab="planets">
+      <span class="tab-icon">◉</span> Planetas
+    </button>
+    <button class="tab-btn" data-tab="ships">
+      <span class="tab-icon">◆</span> Naves
+    </button>
+  </nav>
+
+  <!-- Search Bar -->
+  <div class="search-wrap">
+    <div class="search-box">
+      <span class="search-icon">⌕</span>
+      <input type="text" id="searchInput" placeholder="Buscar na galáxia..." autocomplete="off" />
+      <div class="search-pulse"></div>
+    </div>
+  </div>
+
+  <!-- Content Sections -->
+  <main class="content">
+
+    <!-- Characters -->
+    <section id="characters" class="tab-section active">
+      <div class="section-header">
+        <h2>PERSONAGENS</h2>
+        <span class="count-badge" id="char-count">–</span>
+      </div>
+      <div class="grid" id="characters-grid"></div>
+      <div class="pagination" id="char-pagination"></div>
+    </section>
+
+    <!-- Planets -->
+    <section id="planets" class="tab-section">
+      <div class="section-header">
+        <h2>PLANETAS</h2>
+        <span class="count-badge" id="planet-count">–</span>
+      </div>
+      <div class="grid" id="planets-grid"></div>
+      <div class="pagination" id="planet-pagination"></div>
+    </section>
+
+    <!-- Ships -->
+    <section id="ships" class="tab-section">
+      <div class="section-header">
+        <h2>NAVES ESPACIAIS</h2>
+        <span class="count-badge" id="ship-count">–</span>
+      </div>
+      <div class="grid" id="ships-grid"></div>
+      <div class="pagination" id="ship-pagination"></div>
+    </section>
+
+  </main>
+
+  <!-- Loading Overlay -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="lightsaber">
+        <div class="saber-handle"></div>
+        <div class="saber-blade"></div>
+      </div>
+      <p class="loader-text">CARREGANDO DADOS DA GALÁXIA...</p>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close">✕</button>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="JS/script.js"></script>
+</body>
+</html>

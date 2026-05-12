@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieDeck — Catálogo de Filmes</title>
+    <meta name="description" content="Catálogo moderno de filmes com busca inteligente, sinopse e trailer. Powered by TMDB API.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Ir para conteúdo principal</a>
+
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Navegação principal">
+            <a href="/" class="logo" aria-label="MovieDeck - Início">MOVIE<span>DECK</span></a>
+
+            <div class="tabs" role="tablist" aria-label="Categorias de filmes">
+                <button class="tab-btn active" data-tab="popular"      role="tab" aria-selected="true">Popular</button>
+                <button class="tab-btn"         data-tab="top_rated"   role="tab" aria-selected="false">Melhores</button>
+                <button class="tab-btn"         data-tab="now_playing" role="tab" aria-selected="false">Em Cartaz</button>
+                <button class="tab-btn"         data-tab="upcoming"    role="tab" aria-selected="false">Em Breve</button>
+            </div>
+
+            <div class="search-box" role="search">
+                <label for="searchInput" class="sr-only">Buscar filmes por título</label>
+                <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+                </svg>
+                <input id="searchInput" type="search" placeholder="Buscar filmes..."
+                    aria-label="Campo de busca de filmes" autocomplete="off" spellcheck="false">
+                <button class="clear-btn" id="clearBtn" aria-label="Limpar busca" hidden>✕</button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+        <div class="container">
+            <h2 class="section-title" id="sectionTitle">EM ALTA AGORA</h2>
+            <section id="movieContainer" class="movie-grid"
+                aria-live="polite" aria-label="Lista de filmes" aria-busy="true"></section>
+            <div id="loader" class="loader" aria-hidden="true">
+                <div class="spinner" role="status">
+                    <span class="sr-only">Carregando filmes...</span>
+                </div>
+            </div>
+            <div id="emptyState" class="empty-state hidden" role="alert">
+                <div class="empty-icon" aria-hidden="true">🎬</div>
+                <h3>Nenhum filme encontrado</h3>
+                <p>Tente buscar por outro título</p>
+            </div>
+        </div>
+    </main>
+
+    <div id="modalBackdrop" class="modal-backdrop hidden"
+        role="dialog" aria-modal="true" aria-labelledby="modalMovieTitle">
+        <div class="modal-box" id="modalBox">
+            <div id="modalContent" class="modal-content-wrap"></div>
+        </div>
+    </div>
+
+    <script src="JS/scirpt.js"></script>
+</body>
+</html>

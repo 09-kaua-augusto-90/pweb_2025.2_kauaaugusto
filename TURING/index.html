@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Turing Tecnologia - Empresa Jr.</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="nav-left">
+        <img src="img/logogradientepng.png" alt="Logo Turing" class="logo">
+        <div class="brand-text">
+          <span class="brand-title">Turing Tecnologia</span>
+          <span class="brand-sub">Empresa Jr. UFERSA Angicos</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#solucoes">Soluções</a>
+        <a href="#cases">Cases</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#recrutamento">Recrutamento</a>
+      </nav>
+      <div class="nav-cta">
+        <button class="btn btn-outline" onclick="document.getElementById('recrutamento').scrollIntoView({behavior:'smooth'})">
+          Faça parte
+        </button>
+        <button class="btn btn-primary" onclick="document.getElementById('contato-footer').scrollIntoView({behavior:'smooth'})">
+          Fale com o time
+        </button>
+      </div>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            <span>Empresa Jr. de tecnologia</span>
+          </div>
+          <h1 class="hero-title">
+            Transformando ideias da região em <span>soluções digitais</span>.
+          </h1>
+          <p class="hero-subtitle">
+            Web sites, sistemas sob medida e consultorias que tiram sua empresa das planilhas e automatizam processos críticos, com um time formado na UFERSA Angicos.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" onclick="document.getElementById('solucoes').scrollIntoView({behavior:'smooth'})">
+              Ver soluções
+            </button>
+            <button class="btn btn-outline" onclick="document.getElementById('cases').scrollIntoView({behavior:'smooth'})">
+              Ver cases reais
+            </button>
+          </div>
+          <div class="hero-meta">
+            <span><strong>2019</strong> fundação</span>
+            <span><strong>Equipe multidisciplinar</strong> com áreas de dev, design e negócios</span>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Resumo da Turing">
+          <div class="hero-card-header">
+            <span class="hero-card-badge">Painel Turing</span>
+            <div class="hero-card-chip-row">
+              <span class="chip">Web</span>
+              <span class="chip">Sistemas</span>
+              <span class="chip">Consultoria</span>
+            </div>
+          </div>
+
+          <div class="hero-card-main">
+            <h3 class="hero-card-title">Softwares sob medida</h3>
+            <p class="hero-card-sub">
+              Projetos conectando empresas do semiárido às tecnologias usadas no mercado global.
+            </p>
+            <div class="hero-card-metrics">
+              <div class="metric">
+                <span class="metric-label">Projetos entregues</span>
+                <span class="metric-value">+XX<span>soluções digitais</span></span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">Áreas de atuação</span>
+                <span class="metric-value">Web • Back-end • UX</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card-footer">
+            <div>
+              <span>Time formado por estudantes da UFERSA com mentoria docente.</span>
+            </div>
+            <div class="hero-card-avatars" aria-hidden="true">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SOLUÇÕES -->
+    <section id="solucoes">
+      <div class="container">
+        <h2>Soluções digitais</h2>
+        <p class="section-subtitle">
+          Projetos completos, da concepção ao deploy, usando tecnologias atuais para resolver desafios reais da sua empresa.
+        </p>
+
+        <div class="solutions-grid">
+          <article class="solution-card">
+            <div class="solution-icon">🌐</div>
+            <h3 class="solution-title">Web sites completos</h3>
+            <p class="solution-text">
+              Sites institucionais modernos, responsivos e integrados a formulários, analytics e redes sociais para fortalecer a presença digital do seu negócio.
+            </p>
+            <span class="solution-tag">Landing pages • Sites institucionais</span>
+          </article>
+
+          <article class="solution-card">
+            <div class="solution-icon">⚙️</div>
+            <h3 class="solution-title">Softwares sob medida</h3>
+            <p class="solution-text">
+              Sistemas que substituem planilhas, centralizam informações e automatizam tarefas repetitivas para ganhar eficiência e reduzir erros operacionais.
+            </p>
+            <span class="solution-tag">Gestão interna • Painéis e dashboards</span>
+          </article>
+
+          <article class="solution-card">
+            <div class="solution-icon">🎓</div>
+            <h3 class="solution-title">Consultoria e treinamentos</h3>
+            <p class="solution-text">
+              Orientação em tecnologia e treinamentos em pacote Office e ferramentas digitais para capacitar equipes e organizar processos.
+            </p>
+            <span class="solution-tag">Pacote Office • Boas práticas digitais</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASES -->
+    <section id="cases">
+      <div class="container">
+        <h2>Cases e impactos</h2>
+        <p class="section-subtitle">
+          Exemplos de como a Turing ajuda empresas da região a ganhar produtividade com soluções tecnológicas.
+        </p>
+
+        <div class="cases-grid">
+          <article class="case-main">
+            <p class="case-badge">Case em destaque</p>
+            <h3 class="case-title">Sistema para organizar processos que antes eram todos em planilhas</h3>
+            <p class="case-text">
+              Desenvolvimento de um sistema web para centralizar cadastros, relatórios e controle de atividades. O projeto envolveu mapeamento de processos,
+              UX simplificada e automação de tarefas repetitivas.
+            </p>
+
+            <div class="case-metrics">
+              <div class="case-metric">
+                <strong>–</strong>
+                <span>horas de trabalho manual evitadas por mês</span>
+              </div>
+              <div class="case-metric">
+                <strong>–</strong>
+                <span>planilhas substituídas por um painel unificado</span>
+              </div>
+              <div class="case-metric">
+                <strong>+</strong>
+                <span>visibilidade em tempo real dos dados críticos</span>
+              </div>
+            </div>
+          </article>
+
+          <aside class="case-list" aria-label="Lista de cases">
+            <button class="case-item">
+              Site institucional para empresa local
+              <span>Posicionamento digital com página moderna, otimizada para mobile e integrada a WhatsApp.</span>
+            </button>
+            <button class="case-item">
+              Dashboard de indicadores internos
+              <span>Visualização simplificada de dados antes espalhados em vários documentos.</span>
+            </button>
+            <button class="case-item">
+              Treinamento em pacote Office
+              <span>Capacitação para uso eficiente de Excel, Word e PowerPoint no dia a dia da empresa.</span>
+            </button>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- EQUIPE -->
+    <section id="equipe">
+      <div class="container">
+        <h2>Equipe Turing</h2>
+        <p class="section-subtitle">
+          Estudantes da UFERSA atuando em uma estrutura real de empresa, com diretoria, áreas técnicas e mentoria docente.
+        </p>
+
+        <div class="team-toolbar">
+          <div class="team-filters">
+            <button class="pill active" data-filter="todos">Todos</button>
+            <button class="pill" data-filter="diretoria">Diretoria</button>
+            <button class="pill" data-filter="backend">Back-end</button>
+            <button class="pill" data-filter="frontend">Front-end</button>
+            <button class="pill" data-filter="uiux">UI/UX</button>
+            <button class="pill" data-filter="rh">Recursos Humanos</button>
+            <button class="pill" data-filter="marketing">Marketing</button>
+            <button class="pill" data-filter="consultoria">Consultoria</button>
+          </div>
+          <span>Mandatos anuais, com renovação contínua de membros e funções.</span>
+        </div>
+
+        <div class="team-grid">
+          <!-- Diretoria -->
+          <article class="member-card" data-category="diretoria">
+            <div class="member-avatar">AM</div>
+            <div class="member-info">
+              <div class="member-name">Alica Marrocos</div>
+              <div class="member-role">Presidente</div>
+            </div>
+            <div class="member-tags">
+              <span>Diretoria</span>
+              <span>Gestão</span>
+            </div>
+            <div class="member-social">
+              <a href="#" aria-label="LinkedIn de Karolaine Kelly" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Instagram de Karolaine Kelly" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="GitHub de Karolaine Kelly" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </article>
+
+          <article class="member-card" data-category="diretoria">
+            <div class="member-avatar">JV</div>
+            <div class="member-info">
+              <div class="member-name">João vitor</div>
+              <div class="member-role">Vice-Presidente</div>
+            </div>
+            <div class="member-tags">
+              <span>Diretoria</span>
+              <span>Operações</span>
+            </div>
+            <div class="member-social">
+              <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </article>
+
+          <!-- Front-end -->
+          <article class="member-card" data-category="diretoria frontend">
+            <div class="member-avatar">KA</div>
+            <div class="member-info">
+              <div class="member-name">Kauã Augusto</div>
+              <div class="member-role">Diretor de Front-end</div>
+            </div>
+            <div class="member-tags">
+              <span>Front-end</span>
+              <span>React</span>
+            </div>
+            <div class="member-social">
+              <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </article>
+
+          <!-- Marketing -->
+          <article class="member-card" data-category="marketing diretoria">
+            <div class="member-avatar">PA</div>
+            <div class="member-info">
+              <div class="member-name">Pedro Augusto</div>
+              <div class="member-role">Diretor de Marketing</div>
+            </div>
+            <div class="member-tags">
+              <span>Marketing</span>
+              <span>Social media</span>
+            </div>
+            <div class="member-social">
+              <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </article>
+
+          <!-- Back-end -->
+          <article class="member-card" data-category="backend diretoria">
+            <div class="member-avatar">WS</div>
+            <div class="member-info">
+              <div class="member-name">Wesley dos Santos</div>
+              <div class="member-role">Diretor de Back-end</div>
+            </div>
+            <div class="member-tags">
+              <span>Back-end</span>
+              <span>APIs</span>
+            </div>
+            <div class="member-social">
+              <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </article>
+
+          <article class="member-card" data-category="backend">
+            <div class="member-avatar">LF</div>
+            <div class="member-info">
+              <div class="member-name">Luiz Felipe</div>
+              <div class="member-role">Back-end</div>
+            </div>
+            <div class="member-tags">
+              <span>Back-end</span>
+              <span>Banco de dados</span>
+            </div>
+            <div class="member-social">
+              <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </article>
+
+          <article class="member-card" data-category="backend">
+            <div class="member-avatar">AF</div>
+            <div class="member-info">
+              <div class="member-name">André Felipe</div>
+              <div class="member-role">Back-end</div>
+            </div>
+            <div class="member-tags">
+              <span>Back-end</span>
+              <span>Integrações</span>
+            </div>
+            <div class="member-social">
+              <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </article>
+
+          <!-- UI/UX -->
+          <article class="member-card" data-category="uiux">
+            <div class="member-avatar">JF</div>
+            <div class="member-info">
+              <div class="member-name">Joaro Filho</div>
+              <div class="member-role">UI/UX</div>
+            </div>
+            <div class="member-tags">
+              <span>UI/UX</span>
+              <span>Prototipação</span>
+            </div>
+            <div class="member-social">
+              <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </article>
+
+          <article class="member-card" data-category="uiux diretoria">
+            <div class="member-avatar">KM</div>
+            <div class="member-info">
+              <div class="member-name">Kairo Mendes</div>
+              <div class="member-role">Diretor de UI/UX</div>
+            </div>
+            <div class="member-tags">
+              <span>UI/UX</span>
+              <span>Prototipação</span>
+            </div>
+            <div class="member-social">
+              <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </article>
+
+          <!-- Recursos Humanos -->
+          <article class="member-card" data-category="rh">
+            <div class="member-avatar">RM</div>
+            <div class="member-info">
+              <div class="member-name">Raissa Maíra</div>
+              <div class="member-role">Recursos Humanos</div>
+            </div>
+            <div class="member-tags">
+              <span>RH</span>
+              <span>Gestão de pessoas</span>
+            </div>
+            <div class="member-social">
+              <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </article>
+
+          <article class="member-card" data-category="rh">
+            <div class="member-avatar">SN</div>
+            <div class="member-info">
+              <div class="member-name">Samoel Nadson</div>
+              <div class="member-role">Recursos Humanos</div>
+            </div>
+            <div class="member-tags">
+              <span>RH</span>
+              <span>Clima interno</span>
+            </div>
+            <div class="member-social">
+              <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </article>
+
+          <!-- Consultoria -->
+          <article class="member-card" data-category="consultoria">
+            <div class="member-avatar">MV</div>
+            <div class="member-info">
+              <div class="member-name">Marcelo Vitorino</div>
+              <div class="member-role">Consultoria</div>
+            </div>
+            <div class="member-tags">
+              <span>Consultoria</span>
+              <span>Processos</span>
+            </div>
+            <div class="member-social">
+              <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </article>
+
+          <article class="member-card" data-category="consultoria diretoria">
+            <div class="member-avatar">KH</div>
+            <div class="member-info">
+              <div class="member-name">Kaio Henrique</div>
+              <div class="member-role">Diretor de Consultoria</div>
+            </div>
+            <div class="member-tags">
+              <span>Consultoria</span>
+              <span>Processos</span>
+            </div>
+            <div class="member-social">
+              <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </article>
+
+          <!-- Tutores -->
+          <article class="member-card" data-category="diretoria">
+            <div class="member-avatar">XI</div>
+            <div class="member-info">
+              <div class="member-name">Xico</div>
+              <div class="member-role">Tutor</div>
+            </div>
+            <div class="member-tags">
+              <span>Mentoria</span>
+              <span>Academia</span>
+            </div>
+            <div class="member-social">
+              <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </article>
+
+          <article class="member-card" data-category="diretoria">
+            <div class="member-avatar">WE</div>
+            <div class="member-info">
+              <div class="member-name">Wellighton</div>
+              <div class="member-role">Tutor</div>
+            </div>
+            <div class="member-tags">
+              <span>Mentoria</span>
+              <span>Academia</span>
+            </div>
+            <div class="member-social">
+              <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECRUTAMENTO -->
+    <section id="recrutamento">
+      <div class="container">
+        <h2>Recrutamento</h2>
+        <p class="section-subtitle">
+          Quer fazer parte da Turing? A empresa Jr. é porta de entrada para ter experiência prática em projetos reais, ainda durante a graduação.
+        </p>
+
+        <div class="recruit-grid">
+          <article class="recruit-card">
+            <h3>Como funciona o processo</h3>
+            <p>
+              Os processos seletivos são periódicos e podem incluir etapas como formulário, desafio técnico e entrevista com a diretoria e tutores.
+            </p>
+
+            <div class="recruit-pill-row">
+              <span class="recruit-pill">Back-end</span>
+              <span class="recruit-pill">Front-end</span>
+              <span class="recruit-pill">UI/UX</span>
+              <span class="recruit-pill">Marketing</span>
+              <span class="recruit-pill">Consultoria</span>
+            </div>
+
+            <div class="recruit-steps">
+              <p class="recruit-step"><strong>1.</strong> Inscrição pelo formulário ao lado.</p>
+              <p class="recruit-step"><strong>2.</strong> Análise do perfil e habilidades.</p>
+              <p class="recruit-step"><strong>3.</strong> Desafio prático ou entrevista.</p>
+              <p class="recruit-step"><strong>4.</strong> Resultado e onboarding na Turing.</p>
+            </div>
+          </article>
+
+          <article class="recruit-form">
+            <h3>Formulário de interesse</h3>
+            <form>
+              <div class="form-row">
+                <div>
+                  <label for="nome">Nome completo</label>
+                  <input id="nome" type="text" placeholder="Seu nome" required />
+                </div>
+                <div>
+                  <label for="email">E-mail acadêmico</label>
+                  <input id="email" type="email" placeholder="voce@alunos.ufersa.edu.br" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div>
+                  <label for="curso">Curso</label>
+                  <input id="curso" type="text" placeholder="Ex.: BSI, Eng. Computação..." />
+                </div>
+                <div>
+                  <label for="periodo">Período</label>
+                  <input id="periodo" type="text" placeholder="Ex.: 3º período" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div>
+                  <label for="area">Área de interesse</label>
+                  <select id="area">
+                    <option>Back-end</option>
+                    <option>Front-end</option>
+                    <option>UI/UX</option>
+                    <option>Marketing</option>
+                    <option>Consultoria</option>
+                    <option>Outro</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="github">Portfólio / GitHub (opcional)</label>
+                  <input id="github" type="url" placeholder="link do seu portfólio" />
+                </div>
+              </div>
+
+              <div>
+                <label for="mensagem">Conte um pouco sobre você</label>
+                <textarea id="mensagem" placeholder="Por que você quer fazer parte da Turing?"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Enviar interesse
+              </button>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contato-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Turing Tecnologia</strong> — Empresa Jr. de Tecnologia da UFERSA Campus Angicos.
+      </div>
+      <div class="footer-links">
+        <a href="mailto:contato@turingtec.com.br">contato@turingtec.com.br</a>
+        <a href="https://instagram.com/turing.tec" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://linkedin.com/company/turing-tecnologia" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- THEME TOGGLE -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+    <i class="fas fa-moon" id="themeIcon"></i>
+  </button>
+
+  <script>
+    // ============================================
+    // THEME TOGGLE - Alternar entre Light e Dark
+    // ============================================
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const html = document.documentElement;
+
+    // Carregar tema salvo ou usar 'light' como padrão
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    html.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+
+    // Evento de clique no botão de tema
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    });
+
+    // Atualizar ícone do tema
+    function updateThemeIcon(theme) {
+      if (theme === 'dark') {
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+      } else {
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+      }
+    }
+
+    // ============================================
+    // FILTRO DA EQUIPE
+    // ============================================
+    const filterButtons = document.querySelectorAll('.pill');
+    const memberCards = document.querySelectorAll('.member-card');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+        
+        // Atualiza botão ativo
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        
+        // Filtra membros
+        memberCards.forEach(card => {
+          if (filter === 'todos' || card.getAttribute('data-category').includes(filter)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
