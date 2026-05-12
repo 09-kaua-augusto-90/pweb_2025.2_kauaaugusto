@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Kauã Augusto - Desenvolvedor Front-End em formação">
+    <title>Kauã Augusto | Front-End Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">KAUÃ<span>.DEV</span></div>
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <a href="#contato" class="nav-cta">Contratar</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="particles"></div>
+        <div class="hero-content">
+            <span class="greeting" data-aos="fade-up">Olá, eu sou</span>
+            <h1 data-aos="fade-up" data-aos-delay="100">Kauã Augusto</h1>
+            <p class="role" data-aos="fade-up" data-aos-delay="200">
+                <span class="typing-text">Desenvolvedor Front-End</span>
+            </p>
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
+                Transformando ideias em experiências digitais modernas e funcionais
+            </p>
+            <div class="hero-btns" data-aos="fade-up" data-aos-delay="400">
+                <a href="#projetos" class="btn primary">
+                    <span>Ver Projetos</span>
+                    <i data-lucide="arrow-right"></i>
+                </a>
+                <a href="#contato" class="btn secondary">
+                    <span>Entre em Contato</span>
+                    <i data-lucide="mail"></i>
+                </a>
+            </div>
+            <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="500">
+                <i data-lucide="chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="container">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2 class="section-title" data-aos="fade-right">Sobre mim</h2>
+                <p data-aos="fade-up" data-aos-delay="100">
+                    Desenvolvedor Front-End em formação, com foco na criação de interfaces modernas, 
+                    responsivas e centradas na experiência do usuário. Possuo conhecimentos sólidos em 
+                    HTML, CSS e JavaScript, além de interesse constante em aprimorar habilidades em 
+                    frameworks e boas práticas de desenvolvimento.
+                </p>
+                <p data-aos="fade-up" data-aos-delay="200">
+                    Sou proativo, organizado e estou sempre buscando aprender novas tecnologias para 
+                    entregar soluções criativas e eficientes. Acredito que a programação é uma ferramenta 
+                    poderosa para resolver problemas e criar impacto positivo.
+                </p>
+                
+                <div class="stats-grid" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Projetos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Tecnologias</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Dedicação</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container skills-section">
+        <h2 class="section-title" data-aos="fade-up">Minhas Competências</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+            Tecnologias e ferramentas que utilizo no dia a dia
+        </p>
+        <div class="skills-grid">
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">
+                <i class="devicon-html5-plain colored"></i>
+                <span>HTML5</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="150">
+                <i class="devicon-css3-plain colored"></i>
+                <span>CSS3</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+                <i class="devicon-javascript-plain colored"></i>
+                <span>JavaScript</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 75%"></div>
+                </div>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="250">
+                <i class="devicon-react-original colored"></i>
+                <span>React</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 65%"></div>
+                </div>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+                <i class="devicon-typescript-plain colored"></i>
+                <span>TypeScript</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 60%"></div>
+                </div>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="350">
+                <i class="devicon-git-plain colored"></i>
+                <span>Git</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 70%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="container">
+        <h2 class="section-title" data-aos="fade-up">Projetos em Destaque</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+            Alguns dos meus trabalhos mais recentes
+        </p>
+        <div class="grid-projetos">
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-image">
+                    <div class="project-overlay">
+                        <i data-lucide="code-2"></i>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>FinTrack Dashboard</h3>
+                    <p>Dashboard financeiro com controle de entradas, saídas e saldo em tempo real, interface moderna em tema dark.</p>
+                    <div class="techs">
+                        <span class="tech-tag">#HTML</span>
+                        <span class="tech-tag">#CSS</span>
+                        <span class="tech-tag">#JavaScript</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://fascinating-queijadas-d3dd42.netlify.app/" target="_blank" class="link-proj">
+                            Acessar Projeto 
+                            <i data-lucide="external-link"></i>
+                        </a>
+                        <div class="project-tags">
+                            <span class="project-status">Concluído</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-delay="150">
+                <div class="card-image">
+                    <div class="project-overlay">
+                        <i data-lucide="shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>DevStore E-commerce</h3>
+                    <p>Interface de loja virtual com listagem de produtos, filtro por categorias e carrinho integrado.</p>
+                    <div class="techs">
+                        <span class="tech-tag">#HTML</span>
+                        <span class="tech-tag">#CSS</span>
+                        <span class="tech-tag">#JavaScript</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://idyllic-llama-d33c22.netlify.app/" target="_blank" class="link-proj">
+                            Acessar Projeto 
+                            <i data-lucide="external-link"></i>
+                        </a>
+                        <div class="project-tags">
+                            <span class="project-status">Concluído</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-image">
+                    <div class="project-overlay">
+                        <i data-lucide="dumbbell"></i>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>STARK GYM Dashboard</h3>
+                    <p>Sistema de gestão para academia com métricas de faturamento e controle de alunos.</p>
+                    <div class="techs">
+                        <span class="tech-tag">#HTML</span>
+                        <span class="tech-tag">#CSS</span>
+                        <span class="tech-tag">#JavaScript</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://animated-fudge-5b1c73.netlify.app/" target="_blank" class="link-proj">
+                            Acessar Projeto 
+                            <i data-lucide="external-link"></i>
+                        </a>
+                        <div class="project-tags">
+                            <span class="project-status">Concluído</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-delay="250">
+                <div class="card-image">
+                    <div class="project-overlay">
+                        <i data-lucide="layout"></i>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Nexus Solutions</h3>
+                    <p>Landing Page institucional moderna com seções de serviços e contato.</p>
+                    <div class="techs">
+                        <span class="tech-tag">#HTML</span>
+                        <span class="tech-tag">#CSS</span>
+                        <span class="tech-tag">#JavaScript</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://glowing-chimera-497eaf.netlify.app/" target="_blank" class="link-proj">
+                            Acessar Projeto 
+                            <i data-lucide="external-link"></i>
+                        </a>
+                        <div class="project-tags">
+                            <span class="project-status">Concluído</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-image">
+                    <div class="project-overlay">
+                        <i data-lucide="instagram"></i>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Instagram Clone</h3>
+                    <p>Recriação da interface de login com foco em responsividade e fidelidade ao design original.</p>
+                    <div class="techs">
+                        <span class="tech-tag">#HTML</span>
+                        <span class="tech-tag">#CSS</span>
+                        <span class="tech-tag">#JavaScript</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/09-kaua-augusto-90/pweb_2025.2_kauaaugusto" target="_blank" class="link-proj">
+                            Ver Código 
+                            <i data-lucide="github"></i>
+                        </a>
+                        <div class="project-tags">
+                            <span class="project-status">Concluído</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container experience-section">
+        <h2 class="section-title" data-aos="fade-up">Por que me escolher?</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+            Diferenciais que trago para seus projetos
+        </p>
+        <div class="experience-grid">
+            <div class="experience-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="experience-icon">
+                    <i data-lucide="rocket"></i>
+                </div>
+                <h3>Entrega Rápida</h3>
+                <p>Desenvolvimento ágil com foco em qualidade e prazos cumpridos</p>
+            </div>
+            <div class="experience-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="experience-icon">
+                    <i data-lucide="smartphone"></i>
+                </div>
+                <h3>100% Responsivo</h3>
+                <p>Interfaces que funcionam perfeitamente em qualquer dispositivo</p>
+            </div>
+            <div class="experience-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="experience-icon">
+                    <i data-lucide="code-2"></i>
+                </div>
+                <h3>Código Limpo</h3>
+                <p>Seguindo as melhores práticas e padrões de desenvolvimento</p>
+            </div>
+            <div class="experience-card" data-aos="fade-up" data-aos-delay="250">
+                <div class="experience-icon">
+                    <i data-lucide="zap"></i>
+                </div>
+                <h3>Performance</h3>
+                <p>Sites otimizados para carregar rapidamente e performar bem</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="container contact-section">
+        <div class="contact-content">
+            <div class="contact-text" data-aos="fade-right">
+                <h2 class="section-title">Vamos trabalhar juntos?</h2>
+                <p>Estou sempre aberto a novos desafios e oportunidades. Entre em contato para discutirmos seu próximo projeto!</p>
+                
+                <div class="contact-info">
+                    <a href="mailto:kauaugustocc10@gmail.com" class="contact-item email-full" id="email-link">
+                        <i data-lucide="mail"></i>
+                        <div>
+                            <span class="contact-label">EMAIL</span>
+                            <span class="contact-value">kauaugustocc10@gmail.com</span>
+                        </div>
+                        <span class="copy-tooltip">Clique para copiar</span>
+                    </a>
+                    <a href="https://wa.me/5584998678286" target="_blank" class="contact-item">
+                        <i data-lucide="message-circle"></i>
+                        <div>
+                            <span class="contact-label">WHATSAPP</span>
+                            <span class="contact-value">(84) 99867-8286</span>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kau%C3%A3-augusto-65b014367/" target="_blank" class="contact-item">
+                        <i data-lucide="linkedin"></i>
+                        <div>
+                            <span class="contact-label">LINKEDIN</span>
+                            <span class="contact-value">Kauã Augusto</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/09-kaua-augusto-90/pweb_2025.2_kauaaugusto" target="_blank" class="contact-item">
+                        <i data-lucide="github"></i>
+                        <div>
+                            <span class="contact-label">GITHUB</span>
+                            <span class="contact-value">09-kaua-augusto-90</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">KAUÃ<span>.DEV</span></div>
+            <p>&copy; 2026 Kauã Augusto. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://github.com/09-kaua-augusto-90/pweb_2025.2_kauaaugusto" target="_blank" aria-label="GitHub">
+                    <i data-lucide="github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/kau%C3%A3-augusto-65b014367/" target="_blank" aria-label="LinkedIn">
+                    <i data-lucide="linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializar animações AOS
+        AOS.init({
+            duration: 800,
+            offset: 100,
+            once: true,
+            easing: 'ease-out'
+        });
+
+        // Inicializar ícones Lucide
+        lucide.createIcons();
+
+        // Menu Mobile
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        const body = document.body;
+
+        menuToggle.addEventListener('click', () => {
+            const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', !isOpen);
+            navMenu.classList.toggle('active');
+            body.classList.toggle('menu-open');
+        });
+
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.setAttribute('aria-expanded', 'false');
+                navMenu.classList.remove('active');
+                body.classList.remove('menu-open');
+            });
+        });
+
+        // Header scroll effect
+        let lastScroll = 0;
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+
+            lastScroll = currentScroll;
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Indicador de scroll
+        const scrollIndicator = document.querySelector('.scroll-indicator');
+        if (scrollIndicator) {
+            scrollIndicator.addEventListener('click', () => {
+                document.querySelector('#sobre').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // Typing Effect
+        const typingText = document.querySelector('.typing-text');
+        if (typingText) {
+            const texts = ['Desenvolvedor Front-End', 'Web Designer', 'UI/UX Enthusiast'];
+            let textIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+
+            function typeEffect() {
+                const currentText = texts[textIndex];
+                
+                if (isDeleting) {
+                    typingText.textContent = currentText.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    typingText.textContent = currentText.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+
+                if (!isDeleting && charIndex === currentText.length) {
+                    setTimeout(() => isDeleting = true, 2000);
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    textIndex = (textIndex + 1) % texts.length;
+                }
+
+                const speed = isDeleting ? 50 : 100;
+                setTimeout(typeEffect, speed);
+            }
+
+            setTimeout(typeEffect, 1000);
+        }
+
+        // Criar partículas
+        function createParticles() {
+            const particlesContainer = document.querySelector('.particles');
+            if (!particlesContainer) return;
+            
+            const particleCount = 50;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        createParticles();
+
+        // Copiar email ao clicar
+        const emailLink = document.getElementById('email-link');
+        if (emailLink) {
+            emailLink.addEventListener('click', function(e) {
+                // Tenta abrir o cliente de email
+                // Se não funcionar, copia o email
+                const email = 'kauaugustocc10@gmail.com';
+                
+                // Copiar para clipboard
+                navigator.clipboard.writeText(email).then(() => {
+                    const tooltip = this.querySelector('.copy-tooltip');
+                    const originalText = tooltip.textContent;
+                    tooltip.textContent = 'Email copiado!';
+                    tooltip.style.opacity = '1';
+                    
+                    setTimeout(() => {
+                        tooltip.textContent = originalText;
+                        tooltip.style.opacity = '0';
+                    }, 2000);
+                }).catch(err => {
+                    console.log('Erro ao copiar:', err);
+                });
+            });
+        }
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</body>
+</html>
